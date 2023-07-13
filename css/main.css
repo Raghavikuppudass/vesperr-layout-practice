@@ -1,16 +1,305 @@
+body{
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    height: 2000px;
+    /* background-image: url("../images/layout-xs.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.text-color-1{
+    color: #ffbb2c;
+}
+.text-color-2{
+    color: #5578ff;
+}
+.text-color-3{
+    color: red;
+}
+.text-color-4{
+    color: red;
+}
+.text-color-5{
+    color: red;
+}
+.text-color-6{
+    color: red;
+}
+.text-color-7{
+    color: red;
+}
+.text-color-8{
+    color: red;
+}
+.text-color-9{
+    color: red;
+}
+.text-color-10{
+    color: red;
+}
+.text-color-11{
+    color: red;
+}
+.text-color-12{
+    color: red;
+}
 .container{
-    width: 1400px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border: solid 2px blue
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    /* border: solid 2px red; */
 }
 .row{
     display: flex;
-    background-color: white;
+    flex-wrap: wrap;
+    /* background-color: pink; */
 }
-.js-sb{
+.jc-sb{
     justify-content: space-between;
 }
-.col{
-    background-color: rgb(0, 153, 255)
+.fd-rr{
+    flex-direction: row-reverse;
 }
+.fd-cr{
+    flex-direction: column-reverse;
+}
+.col{
+    /* background-color: yellow; */
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.col-1{
+    width: 8.333333333%;
+}
+.col-2{
+    width: 16.66666667%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33333333%;
+}
+.col-5{
+    width: 41.66666667%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33333333%;
+}
+.col-8{
+    width: 66.66666667%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33333333%;
+}
+.col-11{
+    width: 91.66666667%;
+}
+.col-12{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+    border: solid 1px red;
+    box-sizing: border-box;
+}
+.w-25{
+    width: 25%;
+}
+.img-fluid{
+    max-width: 100%;
+    display: block;
+}
+.card-type-1{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.card-type-1 .cicle{
+    width: 14%;
+    height: 38%;
+    background: blue;
+    border-radius: 00% 00% 00% 120%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s;
+}
+.card-type-1:hover .cicle{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.card-type-1 h2{
+    position: relative;    
+}
+.card-type-1:hover h2{
+    color: #fff;
+}
+.card-type-1 p{
+    position: relative;    
+}
+.card-type-1:hover p{
+    color: #fff;
+}
+.go-to-top{
+    background: blue;
+    padding: 10px 14px;
+    border-radius: 6px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+}
+.go-to-top a{
+    color: #fff;
+    text-decoration: none;
+}
+.header{
+    box-shadow: #cfcfcf 0px 4px 9px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: red;
+}
+/* Banner Styles Start*/
+.banner{
+    padding: 150px 0;
+}
+.banner h1{
+    font-size: 36px;
+    padding-top: 36px;
+    font-weight: 700;
+}
+.banner p{
+    padding-top: 16px;
+    font-size: 24px;
+}
+.banner .cta-wrapper{
+    padding-top: 38px;
+}
+.banner .cta-wrapper a{
+    display: inline-block;
+    border: solid 2px blue;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+}
+.banner .hero-img{
+    max-width: 92%;
+}
+/* Banner Styles End*/
+
+/* Client Styles Start*/
+.clients{
+    padding: 15px 0;
+    background: #e3f3ff;
+}
+.clients .client{
+    padding: 10px 0;
+}
+.clients .client img{
+    max-width: 37%;
+    margin: auto;
+    filter: grayscale(1);
+    transition: all 0.2s;
+}
+.clients .client img:hover{
+    filter: grayscale(0);
+}
+/* Client Styles End*/
+
+/* Section Title Styles Start*/
+.section-title{
+    padding-bottom: 50px;
+}
+.section-title h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.section-title h2 span{
+    position: relative;
+}
+.section-title h2 span:before{
+    content: "";
+    position: absolute;
+    background: #2f6fe1;
+    display: block;
+    width: 52px;
+    height: 3px;
+    left: -57px;
+    top: 50%;
+}
+.section-title h2 span:after{
+    content: "";
+    position: absolute;
+    background: #2f6fe1;
+    display: block;
+    width: 52px;
+    height: 3px;
+    right: -57px;
+    top: 50%;
+}
+.section-title p{
+    text-align: center;
+}
+/* Section Title Styles End*/
+
+/* About Styles Start*/
+.about{
+    padding-top: 54px;
+}
+.about .first-text{
+    line-height: 22px;
+    font-size: 18px;
+    padding-bottom: 26px;
+}
+.about .list-items{}
+.about .list-items li{
+    font-size: 18px;
+    padding-bottom: 16px;
+    line-height: 23px;
+}
+.about .cta{
+    display: inline-block;
+    border: solid 2px blue;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+}
+/* About Styles End*/
+/* Feature Styles Start*/
+.feature{
+    
+}
+.feature:hover{
+    
+}
+.feature i{
+    
+}
+.feature a{
+    
+}
+.feature a:hover{
+    
+}
+/* Feature Styles End*/
+
